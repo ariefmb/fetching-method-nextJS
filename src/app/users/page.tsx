@@ -1,12 +1,11 @@
-import Header from "@/components/Header";
+import Layout from "@/components/Layout";
 import Text from "@/components/Text";
 
 const Users = () => {
   return (
-    <div>
-      <Header />
+    <Layout>
       <Text text="Users Page" />
-    </div>
+    </Layout>
   );
 };
 

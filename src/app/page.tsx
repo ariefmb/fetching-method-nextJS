@@ -1,13 +1,12 @@
-import Header from "@/components/Header";
+import Layout from "@/components/Layout";
 import Text from "@/components/Text";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <Text text="Welcome Ariefmb" />
-      <Footer />
+      <Layout>
+        <Text text="Welcome Ariefmb" />
+      </Layout>
     </>
   );
 }
