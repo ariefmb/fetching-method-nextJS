@@ -5,7 +5,7 @@ export default function Blog() {
   return (
     <div>
       <Header />
-      <Text text="Blog Page"/>
+      <Text text="Blog Page" />
     </div>
   );
 }

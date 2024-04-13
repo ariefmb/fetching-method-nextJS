@@ -1,13 +1,13 @@
-import Header from "@/components/Header"
-import Text from "@/components/Text"
+import Header from "@/components/Header";
+import Text from "@/components/Text";
 
 const Users = () => {
   return (
     <div>
       <Header />
-      <Text text="Users Page"/>
+      <Text text="Users Page" />
     </div>
-  )
-}
+  );
+};
 
-export default Users
+export default Users;

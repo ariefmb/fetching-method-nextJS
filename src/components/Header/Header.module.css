@@ -1,0 +1,9 @@
+.container {
+  margin-top: 20px;
+  padding: 10px;
+  box-shadow: 3px 3px 11px 3px rgb(77, 77, 77);
+  border: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
