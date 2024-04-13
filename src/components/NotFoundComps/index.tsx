@@ -1,7 +1,18 @@
-import Link from "next/link";
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import styles from "./NotFound.module.css";
 
-const NotFoundComp = () => {
+export default function NotFoundComp() {
+  const router = useRouter();
+  
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/");
+    }, 2000);
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -12,11 +23,6 @@ const NotFoundComp = () => {
           <p className="text-3xl">Page Not Found</p>
         </div>
       </div>
-      <button className="hover:drop-shadow-[0_0_10px_white] duration-200 ease-in-out">
-        <Link href="/"><span className={styles.arrow}>&lt;-</span> Back to Home Page</Link>
-      </button>
     </div>
   );
-};
-
-export default NotFoundComp;
+}
