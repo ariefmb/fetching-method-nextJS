@@ -4,7 +4,7 @@ import Text from "@/components/Text";
 export default function Home() {
   return (
     <>
-      <Layout>
+      <Layout pageTitle="Home Page">
         <Text text="Welcome Ariefmb" />
       </Layout>
     </>
