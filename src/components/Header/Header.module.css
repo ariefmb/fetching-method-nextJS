@@ -8,4 +8,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: .2s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 10px rgb(120, 120, 120), inset 0px 0px 10px rgb(120, 120, 120);
 }

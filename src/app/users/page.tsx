@@ -3,7 +3,7 @@ import Text from "@/components/Text";
 
 const Users = () => {
   return (
-    <Layout>
+    <Layout  pageTitle="Users Page">
       <Text text="Users Page" />
     </Layout>
   );
