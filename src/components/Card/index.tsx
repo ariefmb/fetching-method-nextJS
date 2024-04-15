@@ -20,7 +20,7 @@ const Card = (props: UserProps) => {
           <div
             key={user.id}
             onClick={() => router.push(`/users/${user.id}`)}
-            className={cardStyles.card}
+            className={`cursor-pointer ${cardStyles.card}`}
           >
             <li>
               <p className="font-bold">{user.name}</p>

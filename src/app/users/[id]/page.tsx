@@ -1,4 +1,6 @@
 import Layout from "@/components/Layout";
+import textStyle from "@/components/Text/Text.module.css"
+import cardStyle from "@/components/Card/Card.module.css";
 
 interface UserDetailProps {
   id: number;
@@ -32,10 +34,16 @@ export default async function UsersDetail({
 
   return (
     <Layout pageTitle="Users Page">
-      <p>{user.name}</p>
-      <p>{user.email}</p>
-      <p>{user.phone}</p>
-      <p>{user.website}</p>
+      <div className={`${textStyle.container} w-full h-80 flex justify-center items-center`}>
+        <div
+          className={`flex flex-col justify-center text-center ${cardStyle.card} cursor-default text-xl`}
+        >
+          <p className="font-bold">{user.name}</p>
+          <p>{user.email}</p>
+          <p>{user.phone}</p>
+          <p>{user.website}</p>
+        </div>
+      </div>
     </Layout>
   );
 }
