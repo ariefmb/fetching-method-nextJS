@@ -1,0 +1,29 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  margin: auto;
+}
+
+.card {
+  width: 500px;
+  background-color: white;
+  color: black;
+  margin: 12px;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 2px 2px 5px #9b9b9b;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 5px #9b9b9b, inset 0px 0px 10px rgb(114, 114, 114);
+  scale: 1.03;
+}
+
+.card:active {
+  box-shadow: 2px 2px 5px #9b9b9b, inset 0 0 10px black;
+}

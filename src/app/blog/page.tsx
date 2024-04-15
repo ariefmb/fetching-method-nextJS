@@ -4,7 +4,7 @@ import Text from "@/components/Text";
 
 export default function Blog() {
   return (
-    <Layout>
+    <Layout pageTitle="Blog Page">
       <Text text="Blog Page" />
     </Layout>
   );
